@@ -1,0 +1,43 @@
+package com.apnacollege.sigma5.part2.patterns14;
+
+public class ButterflyPattern {
+    public static void butterflyPattern(int n){
+        // 1st Half
+        for(int i=1; i<=n; i++){
+            // Stars - i
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            // Spaces - 2*(n-i)
+            for(int j=1; j<=2*(n-i); j++){
+                System.out.print(" ");
+            }
+            // Stars - i
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+            
+        }
+
+        // 2nd Half
+        for(int i=n; i>=1; i--){
+           // Stars - i
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            // Spaces - 2*(n-i)
+            for(int j=1; j<=2*(n-i); j++){
+                System.out.print(" ");
+            }
+            // Stars - i
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        butterflyPattern(5);
+    }
+}
