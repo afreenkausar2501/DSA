@@ -1,0 +1,13 @@
+package com.apnacollege.sigma5.bitmanipulation21;
+
+public class SetIthBit {
+    public static int setIthBit(int n, int i) {
+        int bitMask = 1 << i;
+        return n | bitMask;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(setIthBit(10, 2)); // Output: 14
+        System.out.println(setIthBit(10, 3)); // Output: 10
+    }
+}
